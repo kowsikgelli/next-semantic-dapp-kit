@@ -15,6 +15,12 @@ check nodejs and npm versions by typing the below command
 
 [Truffle](https://www.trufflesuite.com/)
 
+Install truffle by typing the below command.
+
+```bash
+> sudo npm i -g truffle
+```
+
 check the truffle version by typing the below command
 
 ```bash
