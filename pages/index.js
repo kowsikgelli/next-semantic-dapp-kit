@@ -13,7 +13,7 @@ class App extends Component{
             name = await StorageInstance.methods.name().call();
         }catch(err){
             
-              console.log(error);
+              console.log(err);
               errorOccured=true;
         }
         return {accounts,name,errorOccured};
