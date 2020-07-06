@@ -7,25 +7,22 @@ import StorageInstance from '../instance.js';
 class App extends Component{
     static async getInitialProps(){
         let errorOccured = false;
-        let accounts,name;
+        let name;
         try{
-            accounts = await web3.eth.getAccounts();
             name = await StorageInstance.methods.name().call();
         }catch(err){
-            
               console.log(err);
               errorOccured=true;
         }
-        return {accounts,name,errorOccured};
+        return {name,errorOccured};
     }
     render(){
-        const {accounts,name,errorOccured} = this.props;
+        const {name,errorOccured} = this.props;
         if(errorOccured){
             return <Error />
         }
-        console.log(accounts)
         return(
-            <Layout accounts={accounts}>
+            <Layout>
                 <h2>Edit index.js file</h2>
             </Layout>
                 

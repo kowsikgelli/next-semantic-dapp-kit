@@ -2,7 +2,8 @@ const { default: Link } = require("next/link")
 import Head from 'next/head';
 import Router from 'next/router';
 import Nprogress from 'nprogress';
-
+import React from 'react'
+import web3 from '../web3';
 Router.onRouteChangeStart =(url)=>{
     console.log(url);
     Nprogress.start();
@@ -11,9 +12,21 @@ Router.onRouteChangeStart =(url)=>{
 Router.onRouteChangeComplete =()=>Nprogress.done();
 
 Router.onRouteChangeErr = () => Nprogress.done();
-const Layout =({accounts,children})=>{
-    return(
-        <div className="root">
+class Layout extends React.Component{
+    state={
+        account:''
+    }
+    async componentDidMount(){
+        const accounts = await web3.eth.getAccounts();
+        this.setState({account:accounts[0]})
+        window.ethereum.on('accountsChanged',(accounts)=>{
+            this.setState({account:accounts[0]})
+        })
+    }
+    render(){
+        const {children} = this.props
+        return(
+            <div className="root">
             <Head>
                 <title>Ethereum Dapp</title>
             </Head>
@@ -21,7 +34,7 @@ const Layout =({accounts,children})=>{
                 <Link href="/"><a>Ethereum Dapp</a></Link>
                 {/* <Link href="/"><a>Home</a></Link> */}
                 <div className="topnav-right">
-                    <Link href="/"><a>{accounts[0]}</a></Link>
+                    <Link href="/"><a>{this.state.account}</a></Link>
                 </div>
                 
                 {/* <Link href="about"><a>About</a></Link>
@@ -77,6 +90,7 @@ const Layout =({accounts,children})=>{
         }
     `}</style>
         </div>
-    )
+        )
+    }
 }
 export default Layout;
