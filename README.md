@@ -13,6 +13,10 @@ check nodejs and npm versions by typing the below command
 > npm -v
 ```
 
+[Metamask](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn)
+
+A chrome extension to interact with Dapps
+
 [Truffle](https://www.trufflesuite.com/)
 
 Install truffle by typing the below command.
