@@ -18,7 +18,7 @@ check nodejs and npm versions by typing the below command
 A chrome extension to interact with Dapps
 
 
-![MetamaskImage](https://drive.google.com/uc?export=view&id=1764qHqaJ0rdZ6O7FIJhQj9SrGIDwoTZt)
+[![Metamask](https://drive.google.com/uc?export=view&id=1764qHqaJ0rdZ6O7FIJhQj9SrGIDwoTZt)](http://www.youtube.com/watch?v=6Gf_kRE4MJU "Metamask")
 
 
 [Truffle](https://www.trufflesuite.com/)
