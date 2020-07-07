@@ -123,7 +123,9 @@ now run the following command in terminal.
 
 Now navigate to this [link](http://localhost:3000/)
 
-You will see a nice navbar, everything you need to get started is injected into the project.
+You should see a nice navbar and metamask connected address on top right of navbar, everything you need to get started is injected into the project.
+
+![Home page](https://drive.google.com/uc?export=view&id=1BN9HGGPTL5y5fZtybrjZQDnfXl-OQbOU)
 
 Happy Hacking :smiley: 
 
