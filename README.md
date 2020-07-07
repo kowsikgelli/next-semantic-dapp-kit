@@ -15,7 +15,7 @@ check nodejs and npm versions by typing the below command
 
 [Metamask](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn)
 
-A chrome extension to interact with Dapps
+A chrome extension to interact with Dapps. Click on the image below to watch the video on metamask.
 
 
 [![Metamask](https://drive.google.com/uc?export=view&id=1764qHqaJ0rdZ6O7FIJhQj9SrGIDwoTZt)](http://www.youtube.com/watch?v=6Gf_kRE4MJU "Metamask")
