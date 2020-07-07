@@ -17,6 +17,10 @@ check nodejs and npm versions by typing the below command
 
 A chrome extension to interact with Dapps
 
+
+![MetamaskImage](https://drive.google.com/uc?export=view&id=1764qHqaJ0rdZ6O7FIJhQj9SrGIDwoTZt)
+
+
 [Truffle](https://www.trufflesuite.com/)
 
 Install truffle by typing the below command.
